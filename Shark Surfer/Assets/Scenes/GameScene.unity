@@ -1396,7 +1396,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4fbed0d256d4e4541be809e88c07e95b, type: 3}
       propertyPath: m_TagString
-      value: Human
+      value: Coin
       objectReference: {fileID: 0}
     - target: {fileID: 1630794972795428178, guid: 4fbed0d256d4e4541be809e88c07e95b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1451,6 +1451,18 @@ CapsuleCollider:
   m_Height: 3.3217788
   m_Direction: 1
   m_Center: {x: 0, y: 2.0311868, z: 0}
+--- !u!114 &569141588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569141585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beb3d5b8414fd734490a509785e5a746, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &569141589 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4fbed0d256d4e4541be809e88c07e95b, type: 3}
@@ -2319,7 +2331,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932102700}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.9998062, y: 1.5116332, z: 4.4216504}
@@ -2912,7 +2924,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1243971250}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.6915312, y: 4.8541794, z: 0.2974291}
@@ -3313,6 +3325,7 @@ MonoBehaviour:
   beforeStartPanel: {fileID: 336900050}
   gameplayPanel: {fileID: 46691130}
   endPanel: {fileID: 1572387410}
+  SC: {fileID: 0}
   isStart: 0
 --- !u!1001 &1643909322
 PrefabInstance:
@@ -3572,7 +3585,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 104517609856167801, guid: 94c015d94f6e5364e9b36b960bbe1b77, type: 3}
       propertyPath: m_TagString
-      value: Human
+      value: Coin
       objectReference: {fileID: 0}
     - target: {fileID: 736482141215372739, guid: 94c015d94f6e5364e9b36b960bbe1b77, type: 3}
       propertyPath: m_RootOrder
@@ -3912,7 +3925,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4fbed0d256d4e4541be809e88c07e95b, type: 3}
       propertyPath: m_TagString
-      value: Human
+      value: Coin
       objectReference: {fileID: 0}
     - target: {fileID: 1630794972795428178, guid: 4fbed0d256d4e4541be809e88c07e95b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3972,6 +3985,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4fbed0d256d4e4541be809e88c07e95b, type: 3}
   m_PrefabInstance: {fileID: 1775962432}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1775962437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775962433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beb3d5b8414fd734490a509785e5a746, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1785693744
 GameObject:
   m_ObjectHideFlags: 0
@@ -4199,7 +4224,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1852610567}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.6915312, y: 4.85418, z: 0.29742903}
@@ -4432,7 +4457,7 @@ MonoBehaviour:
   SI: {fileID: 0}
   swerveSpeed: 0.3
   maxSwerveAmount: 3
-  speedForward: 0.06
+  speedForward: 0.05
   jumpForce: 3000
   isJump: 0
   isDead: 0

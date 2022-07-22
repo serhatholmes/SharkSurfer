@@ -10,6 +10,8 @@ public class SceneMang : MonoBehaviour
 
     public GameObject endPanel;
 
+    public SharkContr SC;
+
     public bool isStart = false; 
     void Start()
     {
@@ -31,7 +33,10 @@ public class SceneMang : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-
+    public void SharkDead(){
+        endPanel.SetActive(true);
+        gameplayPanel.SetActive(false);
+    }
 
     
 }

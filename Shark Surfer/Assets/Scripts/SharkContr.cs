@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 public class SharkContr : MonoBehaviour
 {
     Rigidbody rb;
@@ -48,6 +49,10 @@ public class SharkContr : MonoBehaviour
         }
 
         scoreText.SetText(""+coinScore);
+
+        if(isDead){
+            //SM.SharkDead();
+        }
     }
     public void jumpShark(){
         
@@ -56,6 +61,8 @@ public class SharkContr : MonoBehaviour
             rb.AddForce(0,jumpForce,0, ForceMode.Impulse);
         }
     }
+
+    
     private void OnTriggerStay(Collider other) {
 
         if(other.gameObject.CompareTag("Surface")){
@@ -64,11 +71,11 @@ public class SharkContr : MonoBehaviour
         }  
     }
 
-private void OnTriggerExit(Collider other) {
-    if (other.CompareTag("Surface")){
-        isJump = false;
+    private void OnTriggerExit(Collider other) {
+        if (other.CompareTag("Surface")){
+            isJump = false;
+        }
     }
-}
 
     private void OnTriggerEnter(Collider other) {
         if(other.gameObject.CompareTag("Coin")){
@@ -77,5 +84,17 @@ private void OnTriggerExit(Collider other) {
         if(other.gameObject.CompareTag("Life")){
             coinScore +=20;
         }
+        if(other.gameObject.CompareTag("Hitable")){
+            
+            isDead = true;
+            Time.timeScale = 0;
+            SM.endPanel.SetActive(true);
+            SM.gameplayPanel.SetActive(false);
+        }
+
     }
+
+    
+
+
 }
