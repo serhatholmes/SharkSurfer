@@ -10,7 +10,11 @@ public class SceneMang : MonoBehaviour
 
     public GameObject endPanel;
 
+    public GameObject winPanel;
+
     public SharkContr SC;
+
+    
 
     public bool isStart = false; 
     void Start()

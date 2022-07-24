@@ -12,6 +12,7 @@ TagManager:
   - Shark
   - Air
   - Life
+  - Win
   layers:
   - Default
   - TransparentFX

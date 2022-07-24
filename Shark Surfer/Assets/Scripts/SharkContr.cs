@@ -91,6 +91,12 @@ public class SharkContr : MonoBehaviour
             SM.endPanel.SetActive(true);
             SM.gameplayPanel.SetActive(false);
         }
+        if(other.gameObject.CompareTag("Win")){
+
+            SM.gameplayPanel.SetActive(false);
+            SM.winPanel.SetActive(true);
+            Time.timeScale = 0;
+        }
 
     }
 
